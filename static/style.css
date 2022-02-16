@@ -88,8 +88,8 @@ body
 	width:40%;
 	font-family: 'Balsamiq-sans';
 	height: 400px;
-	margin:14% auto;
-	border-radius:25px;
+	margin:15% auto;
+	border-radius:10px;
 	box-shadow: 0 0 100px 5px rgba(0,0,0,0.2);
 	overflow:hidden;
 }
@@ -114,7 +114,7 @@ body
 
 .allign-login{
 	text-align:center;
-	margin-top:15%;
+	margin-top:16%;
 
 }
 
