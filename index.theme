@@ -1,0 +1,6 @@
+[theme]
+name=lightdm-crusedo
+description=anime themed background dark
+engine=lightdm-webkit-greeter
+url=index.html
+session=openbox
