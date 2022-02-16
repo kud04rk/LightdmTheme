@@ -114,7 +114,7 @@ body
 
 .allign-login{
 	text-align:center;
-	margin-top:16%;
+	margin-top:18%;
 
 }
 
@@ -126,7 +126,7 @@ body
 }
 
 .glow_shadow{
-	font-size: 50px;
+	font-size: 40px;
 	font-family: 'Markazi-bold';
 	text-shadow: 1px 3px 5px #2b3b3c;
 }
@@ -268,7 +268,7 @@ body
 	top:-15px;
 	background-color:white;
 	padding:5px 5px 10px 10px;
-	width:93.5%;
+	width:100%;
 	height:20px;
 	font-size:15px;
 	border:1px solid #e2e1e1;
@@ -299,7 +299,7 @@ body
 	top:-15px;
 	background-color:white;
 	padding:5px 5px 10px 10px;
-	width:93.5%;
+	width:100%;
 	height:20px;
 	font-size:15px;
 	border:1px solid #e2e1e1;
@@ -369,8 +369,9 @@ body
 	border:0.5px solid #ffffff;
 	padding:5px;
 	border-radius:15px;
-	width:100%;
+	width:80%;
 	height:40px;
+	margin-left: 5px;
 	background: linear-gradient(270deg, #061616,#2b3b3c, #2b3b3c);
 	-webkit-animation: AnimationName 30s ease infinite;
 	-moz-animation: AnimationName 30s ease infinite;
