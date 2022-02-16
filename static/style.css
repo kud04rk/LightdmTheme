@@ -76,6 +76,15 @@ body
 	position: absolute;
 }
 
+#modelm{
+	width: 20%; /* or any custom size */
+	height:auto;
+	object-fit: contain;
+	top: 0;
+	left:0;
+	position: absolute;
+}
+
 
 #wrapper
 {
