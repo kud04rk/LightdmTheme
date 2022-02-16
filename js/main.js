@@ -2,7 +2,7 @@ var children;
 var curr = 1;
 var selected_user = null;
 var password = null;
-var $user = $("#name");
+var $user = $("#username");
 var $pass = $("#login-password");
 
 function show_error()
@@ -65,7 +65,7 @@ function authentication_complete()
     if (lightdm.is_authenticated)
     	//lightdm.login (lightdm.authentication_user, lightdm.default_session); for lightdm-webkit-greeter
       //lightdm.login (lightdm.authentication_user, lightdm.start_session_sync, 'gnome'); //lightdm-webkit2-greeter
-      lightdm.start_session('gnome');
+      lightdm.start_session('openbox');
     else
    	{
     	select_user_from_list(curr-1, true);

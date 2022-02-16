@@ -3,9 +3,15 @@
     src: url(Balsamiq_Sans/BalsamiqSans-Regular.ttf);
 }
 
+
+@font-face {
+    font-family: 'Markazi-bold';
+    src: url(MarkaziText-Bold.ttf);
+}
+
 body
 {
-	background: linear-gradient(270deg, #409bf0, #ff8585, #8598ff);
+	background: linear-gradient(270deg, #061616,#2b3b3c, #272322 );
 	background-size: 600% 600%;
 
 	-webkit-animation: AnimationName 30s ease infinite;
@@ -29,10 +35,9 @@ body
 }
 
 
-/*
-#login-background
+/* body
 {
-	background-image:url(bg2.jpg);
+	background-image:url(background.jpg);
 	background-size:100%;
     background-repeat:no-repeat;
     background-color:black;
@@ -43,8 +48,25 @@ body
     width:100%;
     height:100%;
     z-index:-1;
-}
-*/
+
+} */
+
+
+/* #login-background
+{
+	background-image:url(background.jpg);
+	background-size:100%;
+    background-repeat:no-repeat;
+    background-color:black;
+    background-position:center top;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+} */
+
 #wrapper
 {
 	z-index:1;
@@ -63,24 +85,72 @@ body
 {
 	text-align:center;
 	background-color:rgb(255, 255, 255);
-	width:300px;
+	width:40%;
 	font-family: 'Balsamiq-sans';
-	height:385px;
-	margin:100px auto;
+	height: 400px;
+	margin:14% auto;
 	border-radius:25px;
 	box-shadow: 0 0 100px 5px rgba(0,0,0,0.2);
 	overflow:hidden;
-
 }
 
 #login-picture
 {
+	
 	border-radius:100%;
 	margin-top:40px;
 	height:7em;
 	-webkit-transition:opacity .5s ease-in-out;
-  transition:opacity .5s ease-in-out;
+   transition:opacity .5s ease-in-out;
 }
+
+#login-picture-vertical
+{	
+    width: 100%; /* or any custom size */
+   height:auto;
+    object-fit: contain;
+  
+}
+
+.allign-login{
+	text-align:center;
+	margin-top:15%;
+
+}
+
+.login-header{
+	text-align:left;
+	margin-left: 15%;
+	margin-top:10%
+
+}
+
+.glow_shadow{
+	font-size: 50px;
+	font-family: 'Markazi-bold';
+	text-shadow: 1px 3px 5px #2b3b3c;
+}
+.background_effects_login{
+	background-color: #7d7e7c;
+}
+
+/* .glow {
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+  } */
 
 #login-response
 {
@@ -97,8 +167,7 @@ body
 
 #login-form
 {
-	margin:auto;
-	margin-right:30px;
+	margin:auto;	
 	width:240px;
 }
 
@@ -224,9 +293,46 @@ body
 #login-password::-moz-placeholder {
     font-family: 'Balsamiq-sans';
 }
+#username
+{
+	position:relative;
+	top:-15px;
+	background-color:white;
+	padding:5px 5px 10px 10px;
+	width:93.5%;
+	height:20px;
+	font-size:15px;
+	border:1px solid #e2e1e1;
+	border-radius:15px;
+
+	text-align: center;
+}
+
+#username::-webkit-input-placeholder {
+    font-family: 'Balsamiq-sans';
+	color: #b4b4b4;
+}
+
+#username:-ms-input-placeholder {
+    font-family: 'Balsamiq-sans';
+}
+
+#username:-moz-placeholder {
+    font-family: 'Balsamiq-sans';
+}
+
+#username::-moz-placeholder {
+    font-family: 'Balsamiq-sans';
+}
 
 #login-name:hover,
 #login-password:hover
+{
+	border:1px solid #e0e0e0;
+	outline:none;
+}
+
+#username:hover
 {
 	border:1px solid #e0e0e0;
 	outline:none;
@@ -236,6 +342,14 @@ body
 #login-name:active,
 #login-password:focus, 
 #login-password:active
+{
+	border: 1px solid #cacaca;
+	box-shadow: inset 0 1px 2px rgba(255, 140, 140, 0.3);
+	outline: none;
+}
+
+#username:focus, 
+#username:active
 {
 	border: 1px solid #cacaca;
 	box-shadow: inset 0 1px 2px rgba(255, 140, 140, 0.3);
@@ -257,7 +371,7 @@ body
 	border-radius:15px;
 	width:100%;
 	height:40px;
-	background: linear-gradient(270deg, #409bf0, #ff8585, #8598ff);
+	background: linear-gradient(270deg, #061616,#2b3b3c, #2b3b3c);
 	-webkit-animation: AnimationName 30s ease infinite;
 	-moz-animation: AnimationName 30s ease infinite;
 	animation: AnimationName 30s ease infinite;
@@ -308,6 +422,19 @@ body
 	background-color:transparent;
 	border:none;
 }
+
+.column {
+	float: left;
+	width: 50%;
+	
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 
 /* BG B U B B L E S
 .bg-bubbles {

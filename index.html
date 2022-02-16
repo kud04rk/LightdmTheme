@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+    <div id="login-background"></div>
+    <div id="wrapper">
+        <div id="login-box">
+            <div class="row">
+                <div class="column">                    
+                    <div class="login-header"> 
+                        <span class="glow_shadow">LOGIN</span>
+                    </div>
+                    <div class="allign-login">
+                    <form id="login-form" action="javascript: provide_secret();">
+                        <input placeholder="Enter UserName" type="text" id="username" tabindex="2">
+                        <br>
+                        <br>                      
+                        <input placeholder="Enter Password" type="password" id="login-password" tabindex="2">
+                        <button id="login-button" type="submit" tabindex="3">
+                            Login
+                        </button>
+                    </form>    
+                    <div id="login-response"></div>            
+                </div>
+                </div>
+                <div class="column">
+                    <img id="login-picture-vertical" src="/static/login_image.jpg" alt="Profile">
+                </div>
+              </div>
+            </div>
+            <script src="js/mock.js"></script>
+            <script src="js/jquery-2.1.0.min.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
