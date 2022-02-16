@@ -88,7 +88,17 @@ body
 	animation-delay: 0s;
 }
 
-@-webkit-keyframes wdszoom0 { 100% { transform: scale(1.1) }}
+
+@-webkit-keyframes wdszoom0 {
+	100% { transform: scale(1.1) }
+}
+@-moz-keyframes wdszoom0 {
+	100% { transform: scale(1.1) }
+}
+@keyframes wdszoom0 {
+	100% { transform: scale(1.1) }
+}
+
 
 
 #wrapper
