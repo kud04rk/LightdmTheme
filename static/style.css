@@ -83,20 +83,20 @@ body
 	top: 0;
 	left:0;
 	position: absolute;
-	animation: wdszoom0 5s linear 0s infinite alternate;
+	animation: wdszoom0 10s linear 0s infinite alternate;
 	-webkit-animation-delay:0s;
 	animation-delay: 0s;
 }
 
 
 @-webkit-keyframes wdszoom0 {
-	100% { transform: scale(1.1) }
+	100% { transform: scale(1.15) }
 }
 @-moz-keyframes wdszoom0 {
-	100% { transform: scale(1.1) }
+	100% { transform: scale(1.15) }
 }
 @keyframes wdszoom0 {
-	100% { transform: scale(1.1) }
+	100% { transform: scale(1.15) }
 }
 
 
