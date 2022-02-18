@@ -128,6 +128,37 @@ body
 	overflow:hidden;
 }
 
+.button-group{
+	text-align:center;
+	background-color:rgb(255, 255, 255);
+	width:10%;
+	font-family: 'Balsamiq-sans';
+	height: 35px;	
+	border-radius:20px;
+	margin-left: 1.5%;
+	box-shadow: 2px 2px 100px 5px rgba(0,0,0,0.2);
+	overflow:hidden;
+	bottom: 0;
+	left:0;
+	position: absolute;
+}
+
+.control-buttons{
+
+	border: 0;	
+	background-color: rgb(255, 255, 255) ;
+	margin: 2%;
+	
+}
+.control-buttons:hover{
+
+	border: 0;	
+	background-color: rgb(255, 255, 255) ;
+	margin: 2%;
+	transform: scale(1.1);
+}
+
+
 #login-picture
 {
 	
