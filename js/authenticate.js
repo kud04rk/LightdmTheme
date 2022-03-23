@@ -21,7 +21,7 @@ class Authenticate {
   async _respond() {
     lightdm.cancel_authentication();
     lightdm.authenticate(String(this._username));
-    await wait(1000);
+    await wait(100);
     lightdm.respond(this._password);
   }
 
