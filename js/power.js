@@ -32,6 +32,7 @@ class Power {
     this._restart.addEventListener("click", () => {
       this._do_restart();
     });
+  }
     
   _setSuspend() {
     if (!lightdm.can_suspend) return;
@@ -40,8 +41,7 @@ class Power {
     });
     
   }
-
-  }
+  
 
   _setButtons() {
     this._setShutdown();
