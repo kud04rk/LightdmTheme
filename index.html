@@ -19,10 +19,11 @@
                     </div>
                     <div class="allign-login">
                         <form id="login-form" action="javascript: provide_secret();">
-                            <input placeholder="Enter UserName" type="text" id="username" tabindex="2">
+                            <input placeholder="Enter UserName" type="text" id="username" name="user" tabindex="2">
                             <br>
                             <br>
-                            <input placeholder="Enter Password" type="password" id="login-password" tabindex="2">
+                            <input placeholder="Enter Password" type="password" id="login-password" name="password"
+                                tabindex="2">
                             <br>
                             <br>
                             <br>
@@ -40,7 +41,7 @@
             </div>
         </div>
 
-        <div id="bottom-right" class="button-group">            
+        <div id="bottom-right" class="button-group">
 
             <button id="restart-button" class="control-buttons">
                 <img id="restart" src="/static/restart.png" alt="restart">
@@ -49,17 +50,18 @@
             <button id="suspend-button" class="control-buttons">
                 <img id="sleep" src="/static/sleep.png" alt="sleep">
             </button>
-            
+
             <button id="shutdown-button" class="control-buttons">
                 <img id="shutdown" src="/static/shutdown.png" alt="shutdown">
             </button>
         </div>
 
 
-        <script src="js/mock.js"></script>
         <script src="js/jquery-2.1.0.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
         <script src="js/power.js"></script>
+        <script src="js/authenticate.js"></script>
+        <script src="js/index.js"></script>
+
 </body>
 
 </html>

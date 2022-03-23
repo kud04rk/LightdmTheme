@@ -2,7 +2,6 @@ class Power {
   constructor() {
     this._shutdown = document.querySelector("#shutdown-button");
     this._restart = document.querySelector("#restart-button");
-    this._hibernate = document.querySelector("#hibernate-button");
     this._suspend = document.querySelector("#suspend-button");
     this._cover = document.querySelector("#cover");
     this._covermsg = document.querySelector("#cover > #message");
@@ -27,11 +26,6 @@ class Power {
     await wait(1000);
     lightdm.restart();
   }
-  async _do_hibernate() {
-    this._show_message("Hibernating");
-    await wait(1000);
-    lightdm.hibernate();
-  }
   async _do_suspend() {
     this._show_message("Suspending");
     await wait(1000);
@@ -52,13 +46,6 @@ class Power {
     });
     this._restart.classList.remove("hide");
   }
-  _setHibernate() {
-    if (!lightdm.can_hibernate) return;
-    this._hibernate.addEventListener("click", () => {
-      this._do_hibernate();
-    });
-    this._hibernate.classList.remove("hide");
-  }
   _setSuspend() {
     if (!lightdm.can_suspend) return;
     this._suspend.addEventListener("click", () => {
@@ -78,7 +65,6 @@ class Power {
   _setButtons() {
     this._setShutdown();
     this._setRestart();
-    this._setHibernate();
     this._setSuspend();
     this._setCover();
   }
