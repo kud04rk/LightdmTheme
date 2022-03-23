@@ -327,7 +327,7 @@ body
 	border:1px solid #e6e6e6;
 }
 
-#login-password
+#input-password
 {
 	position:relative;
 	top:-15px;
@@ -342,23 +342,23 @@ body
 	text-align: center;
 }
 
-#login-password::-webkit-input-placeholder {
+#input-password::-webkit-input-placeholder {
     font-family: 'Balsamiq-sans';
 	color: #b4b4b4;
 }
 
-#login-password:-ms-input-placeholder {
+#input-password:-ms-input-placeholder {
     font-family: 'Balsamiq-sans';
 }
 
-#login-password:-moz-placeholder {
+#input-password:-moz-placeholder {
     font-family: 'Balsamiq-sans';
 }
 
-#login-password::-moz-placeholder {
+#input-password::-moz-placeholder {
     font-family: 'Balsamiq-sans';
 }
-#username
+#input-username
 {
 	position:relative;
 	top:-15px;
@@ -373,31 +373,31 @@ body
 	text-align: center;
 }
 
-#username::-webkit-input-placeholder {
+#input-username::-webkit-input-placeholder {
     font-family: 'Balsamiq-sans';
 	color: #b4b4b4;
 }
 
-#username:-ms-input-placeholder {
+#input-username:-ms-input-placeholder {
     font-family: 'Balsamiq-sans';
 }
 
-#username:-moz-placeholder {
+#input-username:-moz-placeholder {
     font-family: 'Balsamiq-sans';
 }
 
-#username::-moz-placeholder {
+#input-username::-moz-placeholder {
     font-family: 'Balsamiq-sans';
 }
 
 #login-name:hover,
-#login-password:hover
+#input-password:hover
 {
 	border:1px solid #e0e0e0;
 	outline:none;
 }
 
-#username:hover
+#input-username:hover
 {
 	border:1px solid #e0e0e0;
 	outline:none;
@@ -405,16 +405,16 @@ body
 
 #login-name:focus,
 #login-name:active,
-#login-password:focus, 
-#login-password:active
+#input-password:focus, 
+#input-password:active
 {
 	border: 1px solid #cacaca;
 	box-shadow: inset 0 1px 2px rgba(255, 140, 140, 0.3);
 	outline: none;
 }
 
-#username:focus, 
-#username:active
+#input-username:focus, 
+#input-username:active
 {
 	border: 1px solid #cacaca;
 	box-shadow: inset 0 1px 2px rgba(255, 140, 140, 0.3);
