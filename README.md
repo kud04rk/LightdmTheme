@@ -1,4 +1,4 @@
-# LightdmTheme
+# Lightdm Theme Web-greeter
  This is a lightdm theme that is based of web-greeter. 
 
 # Features
